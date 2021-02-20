@@ -1,0 +1,101 @@
+uint8_t n0[8] = {  
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x18,
+  0x07 };
+uint8_t n1[8]  = {
+   0x00,
+  0x00,
+  0x00,
+  0x10,
+  0x1C,
+  0x13,
+  0x10,
+  0x10
+  };
+uint8_t n2[8]={
+  0x00,
+  0x00,
+  0x00,
+  0x01,
+  0x02,
+  0x04,
+  0x08,
+  0x10
+  };
+ uint8_t n3[8]={ 
+    0x1F,
+  0x04,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00
+  };
+ uint8_t n4[8]={
+  0x1F,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00
+  };
+uint8_t n5[8]={ 
+  0x0E,
+  0x04,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00
+  };
+uint8_t n6[8]  = {
+   0x1F,
+  0x04,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00
+  };
+
+ 
+int state  = 0;
+int beforState  = 0;
+void setup()
+{
+  lcd.begin(16,1);
+  lcd.begin(16,2);
+  lcd.createChar(0, n0);
+  lcd.createChar(1, n1);
+  lcd.createChar(2, n2);
+  lcd.createChar(3, n3);
+  lcd.createChar(4, n4);
+  lcd.createChar(5, n5);
+  lcd.setCursor(12,0);
+  for(int i=2;i>=0;i--){
+   lcd.print((char)i);
+  }
+  lcd.setCursor(12,1);
+  for(int i=3;i<=5;i++){
+   lcd.print((char)i);
+  }
+  
+
+ 
+  
+}
+
+void loop()
+{
+   
+}
