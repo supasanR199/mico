@@ -1,4 +1,3 @@
-#define TH 27
 #define RedLED 10
 #include<LiquidCrystal.h>
 LiquidCrystal lcd(12,11,5,4,3,2);
